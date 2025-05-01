@@ -61,10 +61,10 @@ jobs:
       - name: Update K8s Manifests
         run: |
           cat deploy/deploy.yaml
-          sed -i "s|image: */demo-app:.*|image: ziedbenbahri/demo-app:${{ env.VERSION }}|g" deploy/deploy.yaml
+          sed -i "s|image: ziedbenbahri/demo-app:.*|image: ziedbenbahri/demo-app:${{ env.VERSION }}|g" deploy/deploy.yaml
           cat deploy/deploy.yaml
 
-      # Update Github :
+      # Update Github
       - name: Commit the changes
         run: |
           git config --global user.email "<>"
