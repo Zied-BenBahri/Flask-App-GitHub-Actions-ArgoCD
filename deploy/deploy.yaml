@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: demo-app
-          image: ziedbenbahri/demo-app:v20250501160012
+          image: ziedbenbahri/demo-app:v20250501162328
           ports:
             - containerPort: 5000
