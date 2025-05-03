@@ -1,3 +1,6 @@
+#deploy/svc.yaml
+# This file defines a Kubernetes Service for the demo application.
+# It exposes the application on port 5000 and maps it to a NodePort for external access.
 apiVersion: v1
 kind: Service
 metadata:
@@ -11,5 +14,3 @@ spec:
       targetPort: 5000
       nodePort: 30008
   type: NodePort
-
-  
